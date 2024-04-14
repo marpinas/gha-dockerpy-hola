@@ -1,0 +1,14 @@
+name: 'Di hola'
+description: 'Saluda desde Docker python.'
+inputs:
+  nombre:
+    required: false
+    type: string
+    default: John Doe
+    description: "Tu nombre para el saludo"
+outputs:
+  saludo:
+    description: Te saludamos por tu nombre
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
